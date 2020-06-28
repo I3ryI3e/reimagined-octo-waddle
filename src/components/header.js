@@ -1,5 +1,5 @@
-import React,{ Component} from 'react'
-import '../css/styles.css'
+import React,{ Component} from 'react';
+import '../css/styles.css';
 
 
 class Header extends Component{
@@ -11,9 +11,9 @@ class Header extends Component{
     inputChangeHandler = (event) =>{
         this.setState({
             keywords: event.target.value
-        })
+        });
     }
-    render(){      
+    render(){
         return (
             <header className='header'>
                 <div className='logo'>Logo</div>
