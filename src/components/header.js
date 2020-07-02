@@ -6,7 +6,7 @@ const Header = (props) => {
 
     return (
         <header className='header'>
-            <div className='logo'>Logo</div>
+            <div className='logo'>Search the news</div>
             <input type='text'
             onChange={props.keywords}
             />

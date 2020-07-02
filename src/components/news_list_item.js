@@ -1,14 +1,16 @@
 import React from 'react';
-import classes from '../css/styles.css'
 
 const NewsItem = ({item}) =>{
 
    
 
     return(
-        <div className={classes.news_item}>
+        <div className="news_item">
             <h3>{item.title}</h3>
-            <div>
+            <div
+                onMouseOver={event => {
+                    event.target.style.background = "bisque"}}
+                onMouseLeave={event => event.target.style.background= "Azure"}>
                 {item.feed}
             </div>
         </div>
